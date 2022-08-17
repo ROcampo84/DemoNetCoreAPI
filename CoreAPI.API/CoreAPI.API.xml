@@ -1,0 +1,231 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CoreAPI.API</name>
+    </assembly>
+    <members>
+        <member name="T:CoreAPI.API.Controllers.DepartmentController">
+            <summary>
+            DepartmentController's summary
+            </summary>
+        </member>
+        <member name="M:CoreAPI.API.Controllers.DepartmentController.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Constructor's summary
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:CoreAPI.API.Controllers.DepartmentController.Get">
+            <summary>
+            Get operation
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CoreAPI.API.Controllers.DepartmentController.Post(CoreAPI.API.Models.Department)">
+            <summary>
+            Post operation
+            </summary>
+            <param name="dep"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoreAPI.API.Controllers.DepartmentController.Put(CoreAPI.API.Models.Department)">
+            <summary>
+            Put operation
+            </summary>
+            <param name="dep"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoreAPI.API.Controllers.DepartmentController.Delete(System.Int32)">
+            <summary>
+            Delete operation
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CoreAPI.API.Controllers.EmployeeController">
+            <summary>
+            EmployeeController's summary
+            </summary>
+        </member>
+        <member name="M:CoreAPI.API.Controllers.EmployeeController.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            
+            </summary>
+            <param name="configuration"></param>
+            <param name="webHostEnviroment"></param>
+        </member>
+        <member name="M:CoreAPI.API.Controllers.EmployeeController.Get">
+            <summary>
+            Get operation
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CoreAPI.API.Controllers.EmployeeController.Post(CoreAPI.API.Models.Employee)">
+            <summary>
+            Post operation
+            </summary>
+            <param name="emp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoreAPI.API.Controllers.EmployeeController.Put(CoreAPI.API.Models.Employee)">
+            <summary>
+            Put operation
+            </summary>
+            <param name="emp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoreAPI.API.Controllers.EmployeeController.Delete(System.Int32)">
+            <summary>
+            Delete operation
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoreAPI.API.Controllers.EmployeeController.SaveFile">
+            <summary>
+            Save file operation
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CoreAPI.API.Controllers.EmployeeController.GetAllDepartmentNames">
+            <summary>
+            Custom operation
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CoreAPI.API.Controllers.WeatherForecastController">
+            <summary>
+            WeatherForecastController's summary
+            </summary>
+        </member>
+        <member name="M:CoreAPI.API.Controllers.WeatherForecastController.#ctor(Microsoft.Extensions.Logging.ILogger{CoreAPI.API.Controllers.WeatherForecastController})">
+            <summary>
+            
+            </summary>
+            <param name="logger"></param>
+        </member>
+        <member name="M:CoreAPI.API.Controllers.WeatherForecastController.Get">
+            <summary>
+            Get operation
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CoreAPI.API.Models.Department">
+            <summary>
+            Department's summary
+            </summary>
+        </member>
+        <member name="P:CoreAPI.API.Models.Department.DepartmentId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CoreAPI.API.Models.Department.DepartmentName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CoreAPI.API.Models.Employee">
+            <summary>
+            Employee's summary
+            </summary>
+        </member>
+        <member name="P:CoreAPI.API.Models.Employee.EmployeeId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CoreAPI.API.Models.Employee.EmployeeName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CoreAPI.API.Models.Employee.Department">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CoreAPI.API.Models.Employee.DateOfJoining">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CoreAPI.API.Models.Employee.PhotoFileName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CoreAPI.API.Program">
+            <summary>
+            Program's summary
+            </summary>
+        </member>
+        <member name="M:CoreAPI.API.Program.Main(System.String[])">
+            <summary>
+            Main method
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:CoreAPI.API.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CoreAPI.API.Startup">
+            <summary>
+            Startup's summary
+            </summary>
+        </member>
+        <member name="M:CoreAPI.API.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:CoreAPI.API.Startup.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CoreAPI.API.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:CoreAPI.API.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+        <member name="T:CoreAPI.API.WeatherForecast">
+            <summary>
+            WeatherForecast's summary
+            </summary>
+        </member>
+        <member name="P:CoreAPI.API.WeatherForecast.Date">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CoreAPI.API.WeatherForecast.TemperatureC">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CoreAPI.API.WeatherForecast.TemperatureF">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CoreAPI.API.WeatherForecast.Summary">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>
